@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+
+$color1:#fff;
+$color2:#f54ea2;
+$color3:#f7f7f7;
+$color4:#222;
+$color5:#ffdd65;
+$color6:#999;
+
+%btn{
+    color: $color1;
+    background-color: $color2;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    padding: 20px 45px;
+    box-shadow: -8px 8px $color5;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+%btn:hover{
+    box-shadow: -4px 4px $color5;
+}
+
+%viewbtn{
+    width: 120px;
+    margin: 10px auto;
+    position: relative;
+}
+
+%viewbtnbefore{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background-color: $color5;
+    height: 50%;
+    width: 80%;
+    z-index: -10;
+    transition: all 0.2s ease-in;
+}
+
+%viewbtn:hover::before{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    color: $color4;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+@import 'footer';
+@import 'details';
+@import 'news';
+@import 'contact';
+@import 'achievements';
+@import 'myheader';
+@import 'menu';
+@import 'swiper';
+@import 'about';
+@import 'work';
+@import 'services';
+@import 'team';
+
+.testimonials{
+    background-color: #faf7f7;
+    &__content{
+        text-align: center;
+        padding-top: 35px;
+        margin-top: 15px;
+        
+        &--text1{
+            color: $color2;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        &--text2{
+            font-size: 35px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .swiper2{
+        cursor:ew-resize;
+        padding-bottom: 55px;
+
+        &__slide{
+            padding: 35px 15px 70px 15px;
+        }
+        &__content{
+            padding: 30px;
+            text-align: left;
+            &--rating{
+                margin-bottom: 10px;
+            }
+            &--icon{
+                color: $color5;
+            }
+            &--text{
+                color: $color4;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 1.6;
+                opacity: 0.6;
+                word-break: break-word;
+            }
+        }
+
+        &__people{
+            display: flex;
+            margin-left: 35px;
+            margin-top: 40px;
+            &--image{
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+            }
+            &--text{
+
+                &1{
+
+                }
+                &2{
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    opacity: 0.6;
+                }
+            }     
+        }
+
+    }
+}
+
+
+.mywrapper{
+    min-width: 280px;
+}
+
+
+
+
+@media (min-width:1100px){
+
+    .mywrapper{
+        width: calc(100vw - 220px);
+        float: right;
+    } 
+}
+
+.bar{
+    position: fixed;
+    top: 90px;
+    left: 0;
+    height: 15px;
+    background-color: linear;
+    z-index: 90;
+}
+
+@media (min-width:1100px){
+    .bar{
+        top: 0;
+        z-index: 200;
+    }
+}
+
+
+  
+
+
+ 
+
+  
+
+
+  
